@@ -1,0 +1,92 @@
+@import "nullstyle.scss";
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  height: 50px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    &-logo {
+      padding: 0 20px;
+      fill: #bdae82;
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+      :hover {
+        fill: white;
+        transition: 0.3s;
+      }
+    }
+    .nav {
+      &-list {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        list-style: none;
+        :hover {
+          color: #bdae82;
+          transition: 0.3s;
+        }
+      }
+      &-item {
+        padding: 0 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 50px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+  background-image: url(/assets/img/forest.jpg);
+  background-size: cover;
+  .main-button {
+    width: 160px;
+    height: 160px;
+    background-image: url(/assets/svg/play.svg);
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    transition: 0.3s;
+  }
+}
+
+footer {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  .footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    &-rss {
+      background: url(/assets/svg/rss.svg);
+      width: 135px;
+      height: 50px;
+      //   background-size: contain;
+      //   background-repeat: no-repeat;
+      //   background-image: url(/assets/svg/rss.svg);
+      //   transition: 0.3s;
+    }
+  }
+}
