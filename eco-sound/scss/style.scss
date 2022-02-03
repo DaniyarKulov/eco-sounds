@@ -59,7 +59,7 @@ main {
   min-height: 280px;
   background-image: url(/assets/img/forest.jpg);
   background-size: cover;
-  .main-button {
+  button {
     width: 160px;
     height: 160px;
     background-image: url(/assets/svg/play.svg);
@@ -89,4 +89,8 @@ footer {
       //   transition: 0.3s;
     }
   }
+}
+
+.pause {
+  background-image: url(/assets/svg/pause.svg);
 }
