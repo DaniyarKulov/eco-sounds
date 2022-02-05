@@ -171,23 +171,33 @@ main button {
 footer {
   background-color: black;
   height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+footer .block {
+  color: #fff;
+  font-size: 20px;
+  margin: 15px 30px;
+}
+footer .block-git {
+  color: #fff;
+}
+footer .block-git:hover {
+  color: #bdae82;
+}
+footer .footer {
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-footer .footer {
-  max-width: 1440px;
   margin: 0 auto;
 }
-footer .footer-rss {
-  background: url(/assets/svg/rss.svg);
-  width: 135px;
+footer .footer-image {
   height: 50px;
+  margin-right: 40px;
 }
 
 .pause {

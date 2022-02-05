@@ -73,20 +73,27 @@ main {
 footer {
   background-color: black;
   height: 50px;
-  display: flex;
-  justify-content: space-between;
   flex-shrink: 0;
+
+  .block {
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 30px;
+    &-git {
+      color: #fff;
+      &:hover {
+        color: #bdae82;
+      }
+    }
+  }
   .footer {
     max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    &-rss {
-      background: url(/assets/svg/rss.svg);
-      width: 135px;
+    &-image {
       height: 50px;
-      //   background-size: contain;
-      //   background-repeat: no-repeat;
-      //   background-image: url(/assets/svg/rss.svg);
-      //   transition: 0.3s;
+      margin-right: 40px;
     }
   }
 }

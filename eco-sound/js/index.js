@@ -39,7 +39,6 @@ function playNightingale() {
 	isPlay = true;
 	playBtn.classList.add('pause');
 	main.src = '/assets/img/solovey.jpg';
-
 }
 nightingale.addEventListener('click', playNightingale);
 
